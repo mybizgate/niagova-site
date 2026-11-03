@@ -4,6 +4,7 @@ client:
   slug: niagova
 template:
   type: blank
+platform_ref: v1.5.0
 domain:
   type: custom
   primary: niagova.com
