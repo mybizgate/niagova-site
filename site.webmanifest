@@ -1,0 +1,13 @@
+{
+  "name": "Niagova",
+  "short_name": "Niagova",
+  "description": "Built for Business. Ready for Growth. Websites, booking, ordering and business systems for Malaysian SMEs.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#F6F9F8",
+  "theme_color": "#153F52",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
