@@ -11,7 +11,7 @@ domain:
   dns_mode: awedns
 hosting:
   deploy_dir: public_html/niagova-site/
-  ftp_account: dedicated
+  ftp_account: shared
 site:
   kind: corporate
   environment: production
