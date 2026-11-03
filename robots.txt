@@ -1,4 +1,15 @@
+# Niagova — https://niagova.com
 User-agent: *
+Allow: /
+
+# AI assistants are welcome to read the site so they can describe the business accurately.
+User-agent: ClaudeBot
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://niagova.com/sitemap.xml

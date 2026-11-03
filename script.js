@@ -70,8 +70,8 @@
   /* ---------- builder ---------- */
   var bizType = $('#bizType'); var needChips = $('#needChips'); var bizPain = $('#bizPain');
   var needs = { website: true };
-  BIZ.forEach(function (b) { var o = document.createElement('option'); o.value = b.key; o.textContent = b.name; bizType.appendChild(o); });
-  needChips.innerHTML = NEEDS.map(function (n) { return '<button type="button" data-need="' + n.key + '" aria-pressed="' + (needs[n.key] ? 'true' : 'false') + '"><strong>' + n.name + '</strong><span>' + n.desc + '</span></button>'; }).join('');
+  if (bizType.options.length === 0) { BIZ.forEach(function (b) { var o = document.createElement('option'); o.value = b.key; o.textContent = b.name; bizType.appendChild(o); }); }
+  if (!needChips.children.length) needChips.innerHTML = NEEDS.map(function (n) { return '<button type="button" data-need="' + n.key + '" aria-pressed="' + (needs[n.key] ? 'true' : 'false') + '"><strong>' + n.name + '</strong><span>' + n.desc + '</span></button>'; }).join('');
   var recommend = function () {
     var biz = BIZ.filter(function (b) { return b.key === bizType.value; })[0] || BIZ[0];
     var planKey = needs.custom ? 'custom' : needs.system ? 'system' : (needs.booking || needs.ordering || needs.seo) ? 'business' : 'starter';
@@ -94,14 +94,15 @@
   var demoGrid = $('#demoGrid'); var demoFilters = $('#demoFilters');
   var renderDemos = function (cat) {
     demoGrid.innerHTML = DEMOS.filter(function (d) { return cat === 'all' || d.cat === cat; }).map(function (d) {
-      var media = d.img ? '<img src="' + d.img + '" alt="" loading="lazy">' : '<div class="ph">' + d.emoji + '</div>';
+      var media = d.img ? '<img src="' + d.img + '" alt="' + d.name + ' demo: ' + d.desc.replace(/\.$/, '') + '" width="900" height="600" loading="lazy" decoding="async">' : '<div class="ph">' + d.emoji + '</div>';
       var link = d.href ? '<a class="demo-link" href="' + d.href + '" target="_blank" rel="noopener">View live demo →</a>' : '<a class="demo-link soon" href="https://wa.me/' + WA + '?text=' + encodeURIComponent('Hi Niagova, please send me the ' + d.name + ' demo link.') + '" target="_blank" rel="noopener">Preview on request →</a>';
-      return '<article class="demo">' + media + '<div class="demo-body"><small>' + d.sector + '</small><strong>' + d.name + '</strong><p>' + d.desc + '</p><div class="demo-tags">' + d.tags.map(function (t) { return '<span>' + t + '</span>'; }).join('') + '</div>' + link + '</div></article>';
+      return '<article class="demo"><div class="demo-media">' + media + '</div><div class="demo-body"><small>' + d.sector + '</small><strong>' + d.name + '</strong><p>' + d.desc + '</p><div class="demo-tags">' + d.tags.map(function (t) { return '<span>' + t + '</span>'; }).join('') + '</div>' + link + '</div></article>';
     }).join('');
   };
   var setFilter = function (cat) { $$('button', demoFilters).forEach(function (b) { b.setAttribute('aria-selected', b.dataset.cat === cat ? 'true' : 'false'); }); renderDemos(cat); };
-  FILTERS.forEach(function (f, i) { var b = document.createElement('button'); b.type = 'button'; b.setAttribute('role', 'tab'); b.dataset.cat = f[0]; b.textContent = f[1]; b.setAttribute('aria-selected', i === 0 ? 'true' : 'false'); b.addEventListener('click', function () { setFilter(f[0]); }); demoFilters.appendChild(b); });
-  renderDemos('all');
+  if (!demoFilters.children.length) { FILTERS.forEach(function (f, i) { var b = document.createElement('button'); b.type = 'button'; b.setAttribute('role', 'tab'); b.dataset.cat = f[0]; b.textContent = f[1]; b.setAttribute('aria-selected', i === 0 ? 'true' : 'false'); demoFilters.appendChild(b); }); }
+  demoFilters.addEventListener('click', function (e) { var b = e.target.closest('[data-cat]'); if (b) { setFilter(b.dataset.cat); } });
+  if (!demoGrid.children.length) { renderDemos('all'); }
   $('#recDemo').addEventListener('click', function () { var f = this.getAttribute('data-filter'); if (f && FILTERS.some(function (x) { return x[0] === f; })) { setFilter(f); } });
 
   /* ---------- reply-cost calculator ---------- */

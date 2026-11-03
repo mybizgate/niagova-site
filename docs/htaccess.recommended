@@ -1,0 +1,50 @@
+# Recommended .htaccess for the niagova.com document root (public_html/niagova-site/)
+# cPanel / Apache-compatible rules, also honoured by LiteSpeed. NOT deployed automatically:
+# the server already has a cPanel-generated PHP block in this file. Paste the sections
+# marked "Niagova" ABOVE that block via cPanel File Manager, keeping the cPanel block intact.
+
+# --- Niagova: canonical host and scheme ------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Force HTTPS and the bare host (canonical is https://niagova.com/)
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} ^www\.niagova\.com$ [NC]
+  RewriteRule ^ https://niagova.com%{REQUEST_URI} [R=301,L]
+  # /index.html -> /
+  RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+  RewriteRule ^index\.html$ / [R=301,L]
+</IfModule>
+
+# --- Niagova: caching (assets are cache-busted with ?v=<build>) ------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType application/manifest+json "access plus 1 week"
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|webp|svg|png|jpg|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(html)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  # Enable only after confirming every subdomain is served over HTTPS:
+  # Header always set Strict-Transport-Security "max-age=31536000"
+</IfModule>
+
+# --- Niagova: housekeeping --------------------------------------------------
+Options -Indexes
+<FilesMatch "^(\.ftp-deploy-sync-state\.json|site\.config\.yml)$">
+  Require all denied
+</FilesMatch>
+
+# --- keep the existing cPanel-generated php ini block below this line -------

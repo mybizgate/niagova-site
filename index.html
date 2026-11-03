@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Niagova | Websites, Booking, Ordering &amp; Business Systems for Malaysian SMEs</title>
-  <meta name="description" content="Niagova builds websites, booking systems, online ordering and business applications for Malaysian SMEs. Try a live demo before you pay. You name it, we build it. Built for Business. Ready for Growth.">
+  <title>Niagova | Websites &amp; Business Systems for Malaysian SMEs</title>
+  <meta name="description" content="Websites, booking systems, online ordering and business apps for Malaysian SMEs. Try a working demo before you pay a sen. You name it, we build it.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://niagova.com/">
   <meta name="theme-color" content="#153F52">
@@ -15,7 +15,13 @@
   <meta property="og:description" content="Websites, booking, ordering and business systems that answer your customers before the first WhatsApp. Try a live demo first.">
   <meta property="og:image" content="https://niagova.com/assets/og-image.jpg">
   <meta property="og:locale" content="en_MY">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A Malaysian business owner showing a booking confirmation on her phone">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Niagova | Websites &amp; Business Systems for Malaysian SMEs">
+  <meta name="twitter:description" content="Websites, booking, ordering and business apps for Malaysian SMEs. Try a working demo before you pay.">
+  <meta name="twitter:image" content="https://niagova.com/assets/og-image.jpg">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="icon" sizes="any" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
@@ -24,28 +30,166 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="assets/niagova-hero-owner.webp">
+  <link rel="preload" as="image" href="assets/niagova-hero-owner-960.webp" imagesrcset="assets/niagova-hero-owner-640.webp 640w, assets/niagova-hero-owner-960.webp 960w, assets/niagova-hero-owner.webp 1536w" imagesizes="(min-width: 1040px) 48vw, 100vw">
   <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="style.css?v=__BUILD_VERSION__">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Niagova",
-    "alternateName": "MyBizGate",
-    "slogan": "Built for Business. Ready for Growth.",
-    "url": "https://niagova.com/",
-    "logo": "https://niagova.com/assets/brand/niagova-logo.svg",
-    "email": "sales@niagova.com",
-    "telephone": "+601158121239",
-    "address": { "@type": "PostalAddress", "streetAddress": "Kampung Pandan, Lorong Delapan", "addressLocality": "Kuala Lumpur", "postalCode": "55100", "addressCountry": "MY" },
-    "areaServed": "Malaysia",
-    "description": "Websites, booking systems, online ordering and business applications for Malaysian SMEs.",
-    "sameAs": [],
-    "makesOffer": [
-      { "@type": "Offer", "name": "Starter Website", "price": "599", "priceCurrency": "MYR" },
-      { "@type": "Offer", "name": "Business Website", "price": "899", "priceCurrency": "MYR" },
-      { "@type": "Offer", "name": "Website + System", "price": "1299", "priceCurrency": "MYR" }
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://niagova.com/#business",
+        "name": "Niagova",
+        "alternateName": "MyBizGate",
+        "url": "https://niagova.com/",
+        "logo": "https://niagova.com/assets/brand/niagova-logo.svg",
+        "image": "https://niagova.com/assets/og-image.jpg",
+        "slogan": "Built for Business. Ready for Growth.",
+        "description": "Websites, booking systems, online ordering and business applications for Malaysian SMEs.",
+        "email": "sales@niagova.com",
+        "telephone": "+601158121239",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Kampung Pandan, Lorong Delapan",
+          "addressLocality": "Kuala Lumpur",
+          "postalCode": "55100",
+          "addressCountry": "MY"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Malaysia"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "+601158121239",
+          "email": "sales@niagova.com",
+          "availableLanguage": [
+            "en",
+            "ms"
+          ]
+        },
+        "priceRange": "RM 599 – RM 1,299 setup",
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "name": "Starter Website",
+            "price": "599",
+            "priceCurrency": "MYR",
+            "description": "One-time setup; RM 299 per year hosting and support."
+          },
+          {
+            "@type": "Offer",
+            "name": "Business Website",
+            "price": "899",
+            "priceCurrency": "MYR",
+            "description": "One-time setup; RM 399 per year hosting and support."
+          },
+          {
+            "@type": "Offer",
+            "name": "Website + System",
+            "price": "1299",
+            "priceCurrency": "MYR",
+            "description": "One-time setup; RM 599 per year hosting and support."
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://niagova.com/#website",
+        "url": "https://niagova.com/",
+        "name": "Niagova",
+        "publisher": {
+          "@id": "https://niagova.com/#business"
+        },
+        "inLanguage": "en-MY"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://niagova.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do I pay before I see anything?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. We build a tailored demo first, usually within 48 hours. Setup is paid only after you approve it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who owns the website and the domain?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You do. The domain is registered in your name, the content is yours, and you can export it at any time. We manage hosting under the yearly plan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can it be in Bahasa Melayu, or both languages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Bilingual copy is part of the Business and System plans. Most of our clients run English with Malay for key sections."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens to my WhatsApp?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It stays exactly as it is. The website writes complete messages for your customers and sends them to your existing number. Nothing to install."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you connect to what I already use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually. Google Business Profile, Maps, payment links and most booking or accounting tools have integrations. If there's no API, we build a practical workaround."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a full build take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Demo in 48 hours, Starter and Business sites live in one to two weeks after approval, Website + System in three to four. Custom builds are scoped on the call."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is included in the yearly plan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hosting, SSL, security updates, backups, content and price edits, and support on WhatsApp during business hours. No hourly bills for small changes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Were you MyBizGate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Niagova is the new name for the same team and platform. Existing MyBizGate clients keep their sites, plans and support unchanged."
+            }
+          }
+        ]
+      }
     ]
   }
   </script>
@@ -78,7 +222,7 @@
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <p class="eyebrow"><span class="chip chip-mint">Built for Business. Ready for Growth.</span></p>
-          <h1>You name it. <span class="grad">We build it.</span></h1>
+          <h1>Websites, booking systems and business applications for Malaysian SMEs. <span class="grad">You name it. We build it.</span></h1>
           <p class="lead">Websites, booking systems, online ordering, admin dashboards and custom business apps for Malaysian SMEs. Every build answers your customers' price, availability and location questions before the first WhatsApp, so you can get back to running the business.</p>
           <div class="hero-actions">
             <a class="button button-ocean" href="#demos">Try a live demo</a>
@@ -91,7 +235,7 @@
           </ul>
         </div>
         <div class="hero-visual">
-          <div class="hero-photo"><img src="assets/niagova-hero-owner.webp" alt="A Malaysian business owner at her shop counter holding a phone showing a booking confirmation" fetchpriority="high" width="1536" height="1024"></div>
+          <div class="hero-photo"><img src="assets/niagova-hero-owner-960.webp" srcset="assets/niagova-hero-owner-640.webp 640w, assets/niagova-hero-owner-960.webp 960w, assets/niagova-hero-owner.webp 1536w" sizes="(min-width: 1040px) 48vw, 100vw" alt="A Malaysian business owner at her shop counter holding a phone showing a booking confirmation" fetchpriority="high" decoding="async" width="1536" height="1024"></div>
           <div class="float-card float-one reveal"><span class="float-dot" aria-hidden="true"></span><div><strong>New booking · Sat 11:30</strong><span>came in while you were busy</span></div></div>
           <div class="float-card float-two reveal"><span class="float-icon" aria-hidden="true">💬</span><div><strong>0 "berapa?" messages</strong><span>prices are on the site</span></div></div>
         </div>
@@ -105,8 +249,8 @@
         <div class="section-head reveal"><div><p class="eyebrow-text">Name it</p><h2>What should we build <span class="grad">for your business?</span></h2></div><p class="lead">Pick your business type and what you need. We'll show the recommended build, a starting price and the demo closest to it, then write the enquiry for you.</p></div>
         <div class="builder reveal">
           <div class="builder-steps">
-            <div class="builder-step"><span class="step-no">1</span><label for="bizType">Your business</label><select id="bizType"></select></div>
-            <div class="builder-step"><span class="step-no">2</span><span class="label-text">What you need</span><div class="need-chips" id="needChips" role="group" aria-label="What you need"></div></div>
+            <div class="builder-step"><span class="step-no">1</span><label for="bizType">Your business</label><select id="bizType"><option value="beauty">Spa, salon or beauty studio</option><option value="dental">Dental or medical clinic</option><option value="pet">Pet hotel or grooming</option><option value="auto">Car detailing or workshop</option><option value="home">Home services (aircond, plumbing, electrical)</option><option value="solar">Solar, renovation or installer</option><option value="contractor">Contractor or B2B services</option><option value="retail">Retail, runcit or wholesale</option><option value="homestay">Homestay or event space</option><option value="food">Café, bakery or caterer</option><option value="education">Tuition, training or studio</option><option value="other">Something else</option></select></div>
+            <div class="builder-step"><span class="step-no">2</span><span class="label-text">What you need</span><div class="need-chips" id="needChips" role="group" aria-label="What you need"><button type="button" data-need="website" aria-pressed="true"><strong>Website</strong><span>Present services, prices, hours, maps</span></button><button type="button" data-need="booking" aria-pressed="false"><strong>Booking / appointments</strong><span>Slots, staff, confirmations</span></button><button type="button" data-need="ordering" aria-pressed="false"><strong>Ordering &amp; cart</strong><span>Catalogue, cart, pickup/delivery</span></button><button type="button" data-need="system" aria-pressed="false"><strong>Admin dashboard</strong><span>Bookings, orders, customers, staff</span></button><button type="button" data-need="seo" aria-pressed="false"><strong>Google visibility</strong><span>Business Profile, local SEO, reviews</span></button><button type="button" data-need="custom" aria-pressed="false"><strong>Custom system</strong><span>Calculators, wizards, trackers, APIs</span></button></div></div>
             <div class="builder-step"><span class="step-no">3</span><label for="bizPain">Biggest headache today</label><select id="bizPain"><option>Customers keep asking the price on WhatsApp</option><option>"Got slot?" / "Available?" all day</option><option>Orders arrive as long confusing chats</option><option>Nobody can find us on Google</option><option>We manage bookings on paper or in our heads</option><option>Our current website looks outdated</option><option>We need a system nobody sells off the shelf</option></select></div>
           </div>
           <aside class="builder-result" aria-live="polite">
@@ -126,8 +270,21 @@
     <section class="demos" id="demos">
       <div class="wrap">
         <div class="section-head reveal"><div><p class="eyebrow-text">Proof, not promises</p><h2>Try a demo before <span class="grad">you pay a sen.</span></h2></div><p class="lead">Every demo is a real, working build: tap the booking, the cart, the availability board. Filter by what you want to see.</p></div>
-        <div class="filters reveal" id="demoFilters" role="tablist" aria-label="Filter demos"></div>
-        <div class="demo-grid reveal" id="demoGrid"></div>
+        <div class="filters reveal" id="demoFilters" role="tablist" aria-label="Filter demos"><button type="button" role="tab" data-cat="all" aria-selected="true">All demos</button><button type="button" role="tab" data-cat="beauty" aria-selected="false">Beauty</button><button type="button" role="tab" data-cat="dental" aria-selected="false">Dental</button><button type="button" role="tab" data-cat="pet" aria-selected="false">Pets</button><button type="button" role="tab" data-cat="auto" aria-selected="false">Auto</button><button type="button" role="tab" data-cat="supplier" aria-selected="false">Retail</button><button type="button" role="tab" data-cat="home" aria-selected="false">Home services</button><button type="button" role="tab" data-cat="solar" aria-selected="false">Solar</button><button type="button" role="tab" data-cat="contractor" aria-selected="false">Contractor</button><button type="button" role="tab" data-cat="homestay" aria-selected="false">Homestay &amp; events</button></div>
+        <div class="demo-grid reveal" id="demoGrid">
+          <article class="demo"><div class="demo-media"><img src="assets/thumbs/maison-lumiere.webp" alt="Maison Lumière demo: Dark luxury spa atelier: menu, live suites board, memberships" width="900" height="600" loading="lazy" decoding="async"></div><div class="demo-body"><small>Beauty</small><h3>Maison Lumière</h3><p>Dark luxury spa atelier: menu, live suites board, memberships.</p><div class="demo-tags"><span>Booking</span><span>Availability</span></div><a class="demo-link soon" href="https://wa.me/601158121239?text=Hi%20Niagova%2C%20please%20send%20me%20the%20Maison%20Lumi%C3%A8re%20demo%20link." target="_blank" rel="noopener">Preview on request →</a></div></article>
+          <article class="demo"><div class="demo-media"><img src="assets/thumbs/glowly.webp" alt="Glowly Studio demo: Bright studio: 3-tap booking, service bento, instant answers" width="900" height="600" loading="lazy" decoding="async"></div><div class="demo-body"><small>Beauty</small><h3>Glowly Studio</h3><p>Bright studio: 3-tap booking, service bento, instant answers.</p><div class="demo-tags"><span>Booking</span><span>Cart</span><span>FAQ</span></div><a class="demo-link" href="https://beautygate.mybizgate.com/" target="_blank" rel="noopener">View live demo →</a></div></article>
+          <article class="demo"><div class="demo-media"><img src="assets/thumbs/lumen-dental.webp" alt="Lumen Dental Studio demo: Fee guide, per-dentist chairs, toothache triage, comfort menu" width="900" height="600" loading="lazy" decoding="async"></div><div class="demo-body"><small>Dental</small><h3>Lumen Dental Studio</h3><p>Fee guide, per-dentist chairs, toothache triage, comfort menu.</p><div class="demo-tags"><span>Fees</span><span>Slots</span><span>Triage</span></div><a class="demo-link" href="https://dentalgate.mybizgate.com/" target="_blank" rel="noopener">View live demo →</a></div></article>
+          <article class="demo"><div class="demo-media"><img src="assets/thumbs/bright-dental.webp" alt="Bright &amp; Co. Family Dental demo: Kids storyboard, nervous mode, next free slot, Ask Bright" width="900" height="600" loading="lazy" decoding="async"></div><div class="demo-body"><small>Dental</small><h3>Bright &amp; Co. Family Dental</h3><p>Kids storyboard, nervous mode, next free slot, Ask Bright.</p><div class="demo-tags"><span>Slots</span><span>FAQ</span><span>Kids</span></div><a class="demo-link soon" href="https://wa.me/601158121239?text=Hi%20Niagova%2C%20please%20send%20me%20the%20Bright%20%26%20Co.%20Family%20Dental%20demo%20link." target="_blank" rel="noopener">Preview on request →</a></div></article>
+          <article class="demo"><div class="demo-media"><img src="assets/thumbs/cat-hotel.webp" alt="Paw Haven demo: Pet hotel reservations, grooming add-ons, stay tracking" width="900" height="600" loading="lazy" decoding="async"></div><div class="demo-body"><small>Pets</small><h3>Paw Haven</h3><p>Pet hotel reservations, grooming add-ons, stay tracking.</p><div class="demo-tags"><span>Reservations</span><span>Tracking</span></div><a class="demo-link" href="https://petgate.mybizgate.com/" target="_blank" rel="noopener">View live demo →</a></div></article>
+          <article class="demo"><div class="demo-media"><img src="assets/thumbs/car-detailing.webp" alt="Auto Spa demo: Detailing packages by car size, bay slots, WhatsApp handoff" width="900" height="600" loading="lazy" decoding="async"></div><div class="demo-body"><small>Auto</small><h3>Auto Spa</h3><p>Detailing packages by car size, bay slots, WhatsApp handoff.</p><div class="demo-tags"><span>Booking</span><span>Packages</span></div><a class="demo-link" href="https://demo-autospa.mybizgate.com/" target="_blank" rel="noopener">View live demo →</a></div></article>
+          <article class="demo"><div class="demo-media"><img src="assets/thumbs/suppliers-runcit.webp" alt="Pembekal Maju demo: Wholesale catalogue, cart, pickup/delivery, statements" width="900" height="600" loading="lazy" decoding="async"></div><div class="demo-body"><small>Retail</small><h3>Pembekal Maju</h3><p>Wholesale catalogue, cart, pickup/delivery, statements.</p><div class="demo-tags"><span>Cart</span><span>Orders</span><span>Admin</span></div><a class="demo-link" href="https://supplgate.mybizgate.com/" target="_blank" rel="noopener">View live demo →</a></div></article>
+          <article class="demo"><div class="demo-media"><img src="assets/thumbs/fixmate.webp" alt="FixMate demo: Flat prices, zone checker, 2-hour windows, job tracker" width="900" height="600" loading="lazy" decoding="async"></div><div class="demo-body"><small>Home services</small><h3>FixMate</h3><p>Flat prices, zone checker, 2-hour windows, job tracker.</p><div class="demo-tags"><span>Cart</span><span>Windows</span><span>Tracking</span></div><a class="demo-link soon" href="https://wa.me/601158121239?text=Hi%20Niagova%2C%20please%20send%20me%20the%20FixMate%20demo%20link." target="_blank" rel="noopener">Preview on request →</a></div></article>
+          <article class="demo"><div class="demo-media"><img src="assets/thumbs/surianest.webp" alt="SuriaNest Solar demo: Savings calculator, packages, survey slots by area" width="900" height="600" loading="lazy" decoding="async"></div><div class="demo-body"><small>Solar</small><h3>SuriaNest Solar</h3><p>Savings calculator, packages, survey slots by area.</p><div class="demo-tags"><span>Calculator</span><span>Slots</span></div><a class="demo-link soon" href="https://wa.me/601158121239?text=Hi%20Niagova%2C%20please%20send%20me%20the%20SuriaNest%20Solar%20demo%20link." target="_blank" rel="noopener">Preview on request →</a></div></article>
+          <article class="demo"><div class="demo-media"><img src="assets/thumbs/meridian.webp" alt="Meridian Facilities demo: Vendor pack, project portfolio, 3-step RFQ wizard" width="900" height="600" loading="lazy" decoding="async"></div><div class="demo-body"><small>Contractor</small><h3>Meridian Facilities</h3><p>Vendor pack, project portfolio, 3-step RFQ wizard.</p><div class="demo-tags"><span>RFQ</span><span>Portfolio</span><span>Print profile</span></div><a class="demo-link soon" href="https://wa.me/601158121239?text=Hi%20Niagova%2C%20please%20send%20me%20the%20Meridian%20Facilities%20demo%20link." target="_blank" rel="noopener">Preview on request →</a></div></article>
+          <article class="demo"><div class="demo-media"><img src="assets/thumbs/homestay.webp" alt="Homestay &amp; events demo: Calendar availability, house rules, deposit enquiry" width="900" height="600" loading="lazy" decoding="async"></div><div class="demo-body"><small>Homestay</small><h3>Homestay &amp; events</h3><p>Calendar availability, house rules, deposit enquiry.</p><div class="demo-tags"><span>Calendar</span><span>Enquiry</span></div><a class="demo-link soon" href="https://wa.me/601158121239?text=Hi%20Niagova%2C%20please%20send%20me%20the%20Homestay%20%26%20events%20demo%20link." target="_blank" rel="noopener">Preview on request →</a></div></article>
+          <article class="demo"><div class="demo-media"><img src="assets/thumbs/event-space.webp" alt="Event space demo: Packages, date availability, site-visit booking" width="900" height="600" loading="lazy" decoding="async"></div><div class="demo-body"><small>Events</small><h3>Event space</h3><p>Packages, date availability, site-visit booking.</p><div class="demo-tags"><span>Availability</span><span>Packages</span></div><a class="demo-link soon" href="https://wa.me/601158121239?text=Hi%20Niagova%2C%20please%20send%20me%20the%20Event%20space%20demo%20link." target="_blank" rel="noopener">Preview on request →</a></div></article>
+        </div>
         <p class="fine-print">Demo brands, photos, prices and reviews are illustrative. Your build uses your real information.</p>
       </div>
     </section>
@@ -168,7 +325,7 @@
             <div class="phone">
               <div class="phone-top"><span>FreshMart</span><span class="pill">🛒 3</span></div>
               <div class="phone-body">
-                <div class="m-products"><div><img src="assets/ui/freshmart-produce-v2.webp" alt="" loading="lazy"><strong>Vegetable Basket</strong><span>RM 12.90</span></div><div><img src="assets/ui/freshmart-pantry-v2.webp" alt="" loading="lazy"><strong>Kitchen Essentials</strong><span>RM 22.50</span></div><div><img src="assets/ui/freshmart-household-v2.webp" alt="" loading="lazy"><strong>Cleaning Set</strong><span>RM 14.80</span></div></div>
+                <div class="m-products"><div><img src="assets/ui/freshmart-produce-v2.webp" alt="" width="200" height="200" loading="lazy" decoding="async"><strong>Vegetable Basket</strong><span>RM 12.90</span></div><div><img src="assets/ui/freshmart-pantry-v2.webp" alt="" width="200" height="200" loading="lazy" decoding="async"><strong>Kitchen Essentials</strong><span>RM 22.50</span></div><div><img src="assets/ui/freshmart-household-v2.webp" alt="" width="200" height="200" loading="lazy" decoding="async"><strong>Cleaning Set</strong><span>RM 14.80</span></div></div>
                 <div class="m-total"><span>3 items</span><strong>RM 50.20</strong></div>
                 <div class="m-cta">Review order →</div>
               </div>
@@ -279,13 +436,13 @@
     <!-- TEAM + CLIENTS -->
     <section class="team" id="team">
       <div class="wrap team-grid">
-        <figure class="team-photo reveal"><img src="assets/niagova-team-build.webp" alt="The Niagova team reviewing a mobile layout on a large monitor" loading="lazy" width="1536" height="1024"></figure>
+        <figure class="team-photo reveal"><img src="assets/niagova-team-build-960.webp" srcset="assets/niagova-team-build-640.webp 640w, assets/niagova-team-build-960.webp 960w, assets/niagova-team-build.webp 1536w" sizes="(min-width: 720px) 50vw, 100vw" alt="The Niagova team reviewing a mobile layout on a large monitor" loading="lazy" decoding="async" width="1536" height="1024"></figure>
         <div class="team-copy reveal">
           <p class="eyebrow-text">Who we are</p>
           <h2>A small Kuala Lumpur team <span class="grad">that builds like a product company.</span></h2>
           <p>Niagova grew out of MyBizGate. Same people, same platform, a bigger promise: not just websites, but the booking, ordering and admin systems behind them. The name joins <em>niaga</em> (business) and <em>nova</em> (new beginning).</p>
           <ul class="creds"><li>Templates for 8+ Malaysian industries, live and tested</li><li>Shared build platform: every client site gets the same QA</li><li>Laravel APIs for media, bookings and clients</li><li>Owner-led: you talk to the people who build</li></ul>
-          <figure class="clients-photo"><img src="assets/niagova-clients-collage.webp" alt="A spa therapist, a dentist with a child, an aircond technician and a café owner" loading="lazy" width="1536" height="1024"></figure>
+          <figure class="clients-photo"><img src="assets/niagova-clients-collage-960.webp" srcset="assets/niagova-clients-collage-640.webp 640w, assets/niagova-clients-collage-960.webp 960w, assets/niagova-clients-collage.webp 1536w" sizes="(min-width: 720px) 50vw, 100vw" alt="Four Niagova client types: a spa therapist, a dentist with a child patient, an aircond technician and a café owner" loading="lazy" decoding="async" width="1536" height="1024"></figure>
         </div>
       </div>
     </section>

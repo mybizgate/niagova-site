@@ -1,0 +1,29 @@
+# Niagova
+
+> Niagova builds websites, booking systems, online ordering and business applications for small and medium businesses in Malaysia. Formerly MyBizGate. Tagline: Built for Business. Ready for Growth.
+
+## What we do
+- Business websites for Malaysian SMEs (mobile-first, WhatsApp-integrated, Google Business Profile setup)
+- Booking and appointment systems with live availability and WhatsApp confirmation
+- Online catalogues, ordering and shopping-cart flows with pickup or delivery
+- Admin dashboards and web applications for bookings, orders, customers and staff
+- Custom systems: quotation wizards, calculators, job tracking, integrations
+
+## Who we build for
+Spas and salons, dental and medical clinics, pet hotels, car detailing, home services, solar installers, contractors, retail and wholesale, homestays, cafés, tuition centres and other Malaysian SMEs.
+
+## How it works
+Free consultation, a working demo tailored to the business within 48 hours, setup paid only after the demo is approved, then a yearly plan for hosting, maintenance and support.
+
+## Pricing (Malaysian Ringgit)
+- Starter Website: RM 599 one-time setup + RM 299 per year
+- Business Website: RM 899 one-time setup + RM 399 per year
+- Website + System: RM 1,299 one-time setup + RM 599 per year
+- Custom Build: quoted after a free call
+
+## Contact
+- Website: https://niagova.com/
+- Email: sales@niagova.com
+- WhatsApp / phone: +60 11-5812 1239
+- Address: Kampung Pandan, Lorong Delapan, 55100 Kuala Lumpur, Malaysia
+- Hours: Monday to Saturday, 9:00 AM to 6:00 PM (Malaysia time)
