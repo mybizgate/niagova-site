@@ -10,7 +10,7 @@ domain:
   primary: niagova.com
   dns_mode: awedns
 hosting:
-  deploy_dir: public_html/
+  deploy_dir: public_html/niagova-site/
   ftp_account: shared
 site:
   kind: corporate
