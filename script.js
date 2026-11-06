@@ -20,9 +20,9 @@
     { key: 'home', name: 'Home services (aircond, plumbing, electrical)', demo: 'home', url: demoUrl('service', 'service'), note: 'flat price list, zone checker, time windows, job tracking' },
     { key: 'solar', name: 'Solar, renovation or installer', demo: 'solar', url: demoUrl('service', 'modern'), note: 'calculator that pre-qualifies leads, packages, survey slots' },
     { key: 'contractor', name: 'Contractor or B2B services', demo: 'contractor', url: demoUrl('service', 'corporate'), note: 'credentials, project portfolio, RFQ wizard, company profile' },
-    { key: 'retail', name: 'Retail, runcit or wholesale', demo: 'supplier', note: 'catalogue, cart, pickup or delivery, repeat orders' },
+    { key: 'retail', name: 'Retail, runcit or wholesale', demo: 'supplier', url: demoUrl('supplier', 'wholesale'), note: 'catalogue, cart, pickup or delivery, repeat orders' },
     { key: 'homestay', name: 'Homestay or event space', demo: 'homestay', note: 'calendar availability, house rules, deposit flow' },
-    { key: 'food', name: 'Café, bakery or caterer', demo: 'supplier', note: 'menu with prices, pre-orders, pickup slots' },
+    { key: 'food', name: 'Café, bakery or caterer', demo: 'supplier', url: demoUrl('supplier', 'marketplace'), note: 'menu with prices, pre-orders, pickup slots' },
     { key: 'education', name: 'Tuition, training or studio', demo: 'beauty', url: demoUrl('beausalon', 'modern'), note: 'class schedule, enrolment, fee list' },
     { key: 'other', name: 'Something else', demo: 'contractor', url: demoUrl('service', 'corporate'), note: 'we scope it on a 30-minute call' }
   ];
@@ -50,7 +50,10 @@
     { cat: 'home', sector: 'Home services', name: 'Home Services', desc: 'Flat prices, zone checker, 2-hour windows, job tracker.', tags: ['Cart', 'Windows', 'Tracking'], img: 'assets/thumbs/fixmate.webp', href: demoUrl('service', 'service') },
     { cat: 'solar', sector: 'Solar', name: 'Solar Installer', desc: 'Savings calculator, packages, survey slots by area.', tags: ['Calculator', 'Slots'], img: 'assets/thumbs/surianest.webp', href: demoUrl('service', 'modern') },
     { cat: 'contractor', sector: 'Contractor', name: 'Building Contractor', desc: 'Vendor pack, project portfolio, 3-step RFQ wizard.', tags: ['RFQ', 'Portfolio', 'Print profile'], img: 'assets/thumbs/meridian.webp', href: demoUrl('service', 'corporate') },
-    { cat: 'supplier', sector: 'Retail', name: 'Pembekal Maju', desc: 'Wholesale catalogue, cart, pickup/delivery, statements.', tags: ['Cart', 'Orders', 'Admin'], img: 'assets/thumbs/suppliers-runcit.webp', href: '' },
+    { cat: 'supplier', sector: 'Grocery', name: 'Grocery Wholesale', desc: 'Order book for kedai runcit: cartons, running total, reorder.', tags: ['Order sheet', 'Reorder', 'Minimum order'], img: 'assets/thumbs/suppliers-runcit.webp', href: demoUrl('supplier', 'wholesale') },
+    { cat: 'supplier', sector: 'Spare parts', name: 'Spare Parts', desc: 'Pick your car, see what fits, send parts by WhatsApp.', tags: ['Fitment', 'Part numbers', 'Stock'], img: 'assets/thumbs/spare-parts.webp', href: demoUrl('supplier', 'spareparts') },
+    { cat: 'supplier', sector: 'Marketplace', name: 'Community Marketplace', desc: 'Many small sellers, one basket, orders grouped by stall.', tags: ['Multi-seller', 'Basket', 'Pickup'], img: 'assets/thumbs/marketplace.webp', href: demoUrl('supplier', 'marketplace') },
+    { cat: 'supplier', sector: 'Fashion', name: 'Fashion Boutique', desc: 'Full-screen lookbook, fabric colours, sizes, reserve by WhatsApp.', tags: ['Lookbook', 'Sizes', 'Reserve'], img: 'assets/thumbs/boutique.webp', href: demoUrl('supplier', 'boutique') },
     { cat: 'homestay', sector: 'Homestay', name: 'Homestay & events', desc: 'Calendar availability, house rules, deposit enquiry.', tags: ['Calendar', 'Enquiry'], img: 'assets/thumbs/homestay.webp', href: '' },
     { cat: 'homestay', sector: 'Events', name: 'Event space', desc: 'Packages, date availability, site-visit booking.', tags: ['Availability', 'Packages'], img: 'assets/thumbs/event-space.webp', href: '' }
   ];

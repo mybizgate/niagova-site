@@ -25,6 +25,10 @@ Free consultation, a working demo tailored to the business within 48 hours, setu
 - Home Services: https://demo-service.niagova.com/?template=service
 - Solar Installer: https://demo-service.niagova.com/?template=modern
 - Building Contractor: https://demo-service.niagova.com/?template=corporate
+- Grocery Wholesale: https://demo-supplier.niagova.com/?template=wholesale
+- Spare Parts: https://demo-supplier.niagova.com/?template=spareparts
+- Community Marketplace: https://demo-supplier.niagova.com/?template=marketplace
+- Fashion Boutique: https://demo-supplier.niagova.com/?template=boutique
 
 ## Pricing (Malaysian Ringgit)
 - Starter Website: RM 299 one-time setup + RM 199 per year
