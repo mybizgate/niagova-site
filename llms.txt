@@ -15,6 +15,17 @@ Spas and salons, dental and medical clinics, pet hotels, car detailing, home ser
 ## How it works
 Free consultation, a working demo tailored to the business within 48 hours, setup paid only after the demo is approved, then a yearly plan for hosting, maintenance and support.
 
+## Live demos
+- Beauty Salon: Luxury: https://demo-beausalon.niagova.com/?template=luxury
+- Beauty Salon: Modern: https://demo-beausalon.niagova.com/?template=modern
+- Dental Clinic: Premium: https://demo-dental.niagova.com/?template=premium
+- Dental Clinic: Modern: https://demo-dental.niagova.com/?template=modern
+- Pet Spa & Hotel: https://demo-cathotel.niagova.com/
+- Auto Care & Services: https://demo-autocare.niagova.com/
+- Home Services: https://demo-service.niagova.com/?template=service
+- Solar Installer: https://demo-service.niagova.com/?template=modern
+- Building Contractor: https://demo-service.niagova.com/?template=corporate
+
 ## Pricing (Malaysian Ringgit)
 - Starter Website: RM 299 one-time setup + RM 199 per year
 - Business Website: RM 599 one-time setup + RM 299 per year

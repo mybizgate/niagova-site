@@ -25,7 +25,7 @@ Niagova (from *niaga* + *nova*) is the rebrand of MyBizGate: websites, booking, 
 ## Rebrand continuity checklist
 - Keep `mybizgate.com` live with a 301 to `niagova.com`; keep the "Formerly MyBizGate" line in the footer and FAQ for 12 months.
 - Update Google Business Profile name, WhatsApp Business profile, email signatures and social handles together on launch day.
-- Move demo subdomains (`petgate.mybizgate.com` etc.) to `demo.niagova.com/<slug>` and update `DEMOS` in `script.js`.
+- Demos live at `demo-<slug>.niagova.com`; `DEMOS` and `BIZ` in `script.js` link to them, with `?template=` opening a specific design.
 - Trademark: the mark is a proposed design; run MyIPO clearance before using ® anywhere.
 
 ## Measurement
