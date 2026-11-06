@@ -6,6 +6,11 @@
 # --- Niagova: canonical host and scheme ------------------------------------
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  # The cPanel helper host serves the same folder; send it to the real domain.
+  # /.well-known/ stays reachable so AutoSSL validation is unaffected.
+  RewriteCond %{HTTP_HOST} ^(www\.)?niagova\.mybizgate\.com$ [NC]
+  RewriteCond %{REQUEST_URI} !^/\.well-known/
+  RewriteRule ^ https://niagova.com%{REQUEST_URI} [R=301,L]
   # Force HTTPS and the bare host (canonical is https://niagova.com/)
   RewriteCond %{HTTPS} off [OR]
   RewriteCond %{HTTP_HOST} ^www\.niagova\.com$ [NC]
