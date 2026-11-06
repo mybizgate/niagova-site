@@ -33,9 +33,9 @@
     { key: 'custom', name: 'Custom system', desc: 'Calculators, wizards, trackers, APIs' }
   ];
   var PLANS = {
-    starter: { name: 'Starter Website', setup: 599, year: 299, desc: 'A professional mobile-first website with click-to-WhatsApp and Google Business Profile setup.' },
-    business: { name: 'Business Website', setup: 899, year: 399, desc: 'Service or product pages with prices, a booking or order enquiry flow, instant-answer FAQ, maps and reviews.' },
-    system: { name: 'Website + System', setup: 1299, year: 599, desc: 'Everything in Business plus a booking or ordering system, admin dashboard and customer records.' },
+    starter: { name: 'Starter Website', setup: 299, year: 199, desc: 'A professional mobile-first website with click-to-WhatsApp and Google Business Profile setup.' },
+    business: { name: 'Business Website', setup: 599, year: 299, desc: 'Service or product pages with prices, a booking or order enquiry flow, instant-answer FAQ, maps and reviews.' },
+    system: { name: 'Website + System', setup: 999, year: 399, desc: 'Everything in Business plus a booking or ordering system, admin dashboard and customer records.' },
     custom: { name: 'Custom Build', setup: 0, year: 0, desc: 'A system shaped around your workflow: calculators, wizards, tracking, multi-branch, integrations, Laravel API.' }
   };
   var DEMOS = [

@@ -5,7 +5,7 @@ Niagova (from *niaga* + *nova*) is the rebrand of MyBizGate: websites, booking, 
 ## Positioning
 - **Promise:** every Niagova build answers *how much, got slot, where are you* before the first WhatsApp. This is the story every industry template already tells, so the corporate site tells it once, up front.
 - **Proof over claims:** "Try a live demo before you pay a sen" and "demo in 48 hours" are the two offers that turn a browsing owner into a WhatsApp conversation.
-- **Ladder:** Starter (RM 599) → Business (RM 899) → Website + System (RM 1,299) → Custom Build (quoted). The yearly plan (RM 299 / 399 / 599) is the recurring revenue and the retention mechanism.
+- **Ladder:** Starter (RM 299) → Business (RM 599) → Website + System (RM 999) → Custom Build (quoted). The yearly plan (RM 199 / 299 / 399) is the recurring revenue and the retention mechanism.
 
 ## What the site does for marketing
 1. **Build configurator** (section `#build`): business type × needs × headache → recommended plan, price, closest demo and a pre-written WhatsApp enquiry. It makes "you name it" an action instead of a slogan and qualifies the lead.
@@ -18,7 +18,7 @@ Niagova (from *niaga* + *nova*) is the rebrand of MyBizGate: websites, booking, 
 1. **Google Business Profile + local SEO** for "website untuk klinik/spa/bengkel", "sistem booking", "sistem order WhatsApp". Create one landing page per industry later (`/dental`, `/beauty`, `/home-services`), each reusing the demo and configurator.
 2. **WhatsApp click-to-chat ads** (Meta) with 15-second screen recordings of a demo booking flow. Target by interest and radius around Klang Valley first.
 3. **TikTok / Reels**: "watch the website answer 'berapa?' for you" clips cut from the demo pages.
-4. **Referral**: RM 200 credit on the yearly plan for every referred client that goes live.
+4. **Referral**: RM 199 credit on the yearly plan for every referred client that goes live (a free Starter renewal, or RM 199 off a higher plan).
 5. **Partners**: accountants, company secretaries, POS resellers and franchise operators who meet SMEs at registration time.
 6. **Case studies**: one per industry as clients go live, each with the before/after WhatsApp count.
 
